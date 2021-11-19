@@ -67,7 +67,7 @@ function addPagination(list) {
   // Removes the active class from previous button, gives the clicked button a class of "active" and displays the students on that page.
   linkList.addEventListener("click", (e) => {
     const buttonTarget = e.target;
-    if ((buttonTarget.tagName = "BUTTON")) {
+    if ((buttonTarget.tagName === "BUTTON")) {
       const previousButton = document.querySelector(".active");
       previousButton.classList = "";
       buttonTarget.classList.add("active");
